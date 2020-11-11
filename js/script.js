@@ -10,6 +10,7 @@ sconto del 20% per i minorenni e del
 
  // km da percorrere
 var km = parseInt(prompt("Km da percorrere"));
+document.getElementById('km').innerHTML = km;
 console.log(km);
 // eta del passeggero
 var anni = parseInt(prompt("Quanti anni hai?"));
@@ -37,3 +38,5 @@ if (!isNaN(anni) && (km) ) {
 } else {
   document.getElementById('prezzo').innerHTML = "Attenzione i dati inseriti sono errati";
 }
+ var tempoViaggio = km * 2;
+ document.getElementById('tempo').innerHTML = tempoViaggio;
