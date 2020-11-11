@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 980px;
+  margin: auto;
+  padding: 20px 0;
+  font-family: helvetica;
+}
+
+.logo img {
+  width: 30%;
+}
+.container_fluid {
+  display: flex;
+  align-content: flex-end;
+  height: 90px;
+  background-image: url(https://www.lefrecce.it/B2CWeb/npa/_img/headerBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h3 {
+  height: 40%;
+  padding: 20px 0
+  color: #D01325;
+  border: 1px solid
+}

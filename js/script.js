@@ -22,12 +22,18 @@ var scontoUnder = (ticketCost * 20 / 100);
 console.log(scontoUnder);
 var scontoOver = (ticketCost * 40 / 100);
 console.log(scontoOver);
-if (!isNaN(anni)) {
-  if (anni < 18) {
-      document.getElementById('prezzo').innerHTML = ticketCost - scontoUnder;
-  } else if (anni > 65) {
-      document.getElementById('prezzo').innerHTML = ticketCost - scontoOver;
+if (!isNaN(anni) && (km) ) {
+  if (anni > 1, km > 0) {
+    if (anni < 18) {
+        document.getElementById('prezzo').innerHTML = ticketCost - scontoUnder;
+    } else if (anni > 65) {
+        document.getElementById('prezzo').innerHTML = ticketCost - scontoOver;
+    } else {
+        document.getElementById('prezzo').innerHTML = ticketCost;
+    }
   } else {
-      document.getElementById('prezzo').innerHTML = ticketCost;
+    document.getElementById('prezzo').innerHTML = "Attenzione i dati inseriti sono errati";
   }
+} else {
+  document.getElementById('prezzo').innerHTML = "Attenzione i dati inseriti sono errati";
 }
